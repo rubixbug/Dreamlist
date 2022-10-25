@@ -54,15 +54,20 @@ h3 {
     color: #E7DFC6;
 }
 
+.questlist ol {
+    padding-bottom: 25px;
+}
 
 .questlist ol li {
     color: #3A3335;
+    margin: 10px;
 }
 
 .questname {
     text-decoration: underline;
     font-size: 25px;
-    padding: 15px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .info_section {
@@ -73,9 +78,41 @@ h3 {
 
 #nameplate img {
     border-radius:50%;
+    height: 200px;
 }
 
 hr {
-    border: 1px solid grey;
+    border: 1px solid #000080;
     margin-top: 20px;
+    width: 50%;
+}
+
+#goofy_quest_one {
+    display:none;
+}
+
+#goofy_quest_two {
+    display:none;
+}
+
+#goofy_quest_three {
+    display:none;
+}
+
+#goofy_quest_four {
+    display: none;
+}
+
+#goofy_quest_five {
+    display:none;
+}
+.button {
+    background-color: green;
+    border-radius : 25px;
+    font-family: "Inter", sans-serif;
+    color: aliceblue;
+}
+
+.button_space {
+    text-align: center;
 }

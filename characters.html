@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <title>Dreamlight Characters</title>
+<script src="characters.js"></script>    
+<title>Dreamlight Characters</title>
 </head>
 <body>
     <h1>Characters</h1>
@@ -25,7 +26,7 @@
         </div>
     </div>
     <div id="character_section">
-        <div id="goofy_section">
+        <div id="goofy_section" class="single_char_section">
             <div id="nameplate">
                 <h2>Goofy</h2>
                 <img src="./images/goofy_icon.jpg" />
@@ -34,19 +35,27 @@
                 <div class="quests_section" id="goofy_quests">
                     <h2>Quests</h2>
                     <ul class="questlist">
-                        <li class="questname">Fishing Expedition:</li>
-                            <ol>
-                                <li>Find Goofy's fishing rod by the pond near his house.</li>
-                                <li>Ask Goofy "How do I fish?"</li>
-                                <li>Catch a fish!</li>
-                                <li>Show Goofy what you caught.</li>
-                                <li>Follow Goofy to his stall and talk to him.</li>
-                                <li>Use the sign next to the stall to fix it (for free)</li>
-                                <li>Speak to Goofy one more time.</li>
-                                <li>QUEST COMPLETE!</li>
-                            </ol>
-                            <hr>
-                        <li class="questname">A Warm Welcome</li>
+                        
+                            <li class="questname">Fishing Expedition<span id="dots">:</span></li>
+                            <span id="goofy_quest_one">
+                                <ol>
+                                    <li>Find Goofy's fishing rod by the pond near his house.</li>
+                                    <li>Ask Goofy "How do I fish?"</li>
+                                    <li>Catch a fish!</li>
+                                    <li>Show Goofy what you caught.</li>
+                                    <li>Follow Goofy to his stall and talk to him.</li>
+                                    <li>Use the sign next to the stall to fix it (for free)</li>
+                                    <li>Speak to Goofy one more time.</li>
+                                    <li>QUEST COMPLETE!</li>
+                                </ol>
+                            </span>
+                            <div class="button_space">
+                            <button onclick="revealGoofyOne()" id="myBtn_one" class="button">Reveal Steps</button>
+                            </div>   
+                        
+                        <hr>
+                        <li class="questname">A Warm Welcome<span id="dots">:</span></li>
+                        <span id="goofy_quest_two">
                             <ol>
                                 <li>Speak to Goofy.</li>
                                 <li>Find 3 Basil in the Meadow and 3 Oregano in the Plaza.</li>
@@ -54,8 +63,13 @@
                                 <li>Cook any meal using Basil or Oregano, then speak to Goofy one more time!</li>
                                 <li>QUEST COMPLETE!</li>
                             </ol>
+                            </span>
+                            <div class="button_space">
+                            <button onclick="revealGoofyTwo()" id="myBtn_two" class="button">Reveal Steps</button>
+                            </div>
                             <hr>
-                        <li class="questname">Photographic Memory</li>
+                        <li class="questname">Photographic Memory<span id="dots">:</span></li>
+                        <span id="goofy_quest_three">
                             <ol>
                                 <li>Speak to Goofy, he'll ask you to take photos of things around the village.</li>
                                 <li>Take photos of:</li>
@@ -79,9 +93,14 @@
                                 <li>Return to Goofy a final time.</li>
                                 <li>QUEST COMPLETE!</li>
                             </ol>
+                        </span>
+                        <div class="button_space">
+                            <button onclick="revealGoofyThree()" id="myBtn_three" class="button">Reveal Steps</button>
+                            </div>
                             <hr>
-                        <li class="questname">The Mysterious Wreck</li>
-                            <ol>
+                        <li class="questname">The Mysterious Wreck<span id="dots">:</span></li>
+                        <span id="goofy_quest_four">    
+                        <ol>
                                 <li>Go to Dazzle Beach. Find the island across the water from Goofy's stall. On the far side of that island is a paddle in the sand. Pick it up.</li>
                                 <li>Speak to Goofy and harvest the following materials:</li>
                                     <ul>
@@ -96,8 +115,13 @@
                                 <li>Speak to Goofy a final time.</li>
                                 <li>QUEST COMPLETE!</li>
                             </ol>
+                        </span>
+                        <div class="button_space">
+                            <button onclick="revealGoofyFour()" id="myBtn_four" class="button">Reveal Steps</button>
+                            </div>
                             <hr>
-                        <li class="questname">Dinner With a Friend</li>
+                        <li class="questname">Dinner With a Friend<span id="dots">:</span></li>
+                        <span id="goofy_quest_five">
                             <ol>
                                 <li>Speak to Goofy, he'll ask for help preparing dinner for Mickey coming over.</li>
                                 <li>Collect the following seafood items:</li>
@@ -111,8 +135,12 @@
                                 <li>Cook two Bouillabaisses and give them to Goofy.</li>
                                 <li>QUEST COMPLETE!</li>
                             </ol>
+                        </span>
+                        <div class="button_space">
+                            <button onclick="revealGoofyFive()" id="myBtn_five" class="button">Reveal Steps</button>
+                            </div>
                             <hr>
-                        <li class="questname">Photo Fervor</li>
+                        <li class="questname">Photo Fervor<span id="dots">:</span></li>
                             <ol>
                                 <li>Speak to Goofy, he'll ask you to take photos of the following things:</li>
                                     <ul>
@@ -134,7 +162,16 @@
                                 <li>QUEST COMPLETE!</li>         
                             </ol>
                             <hr>
-                        <li class="questname">Scrapbook Blitz</li>
+                        <li class="questname">Scrapbook Blitz<span id="dots">:</span></li>
+                            <ol>
+                                <li>At Frienship Level 10, speak to Goofy who will ask for pictures of the villagers.</li>
+                                <li>Take a photo of Mickey, and then Donald, and then 4 other villagers that you'd like.</li>
+                                <li>Speak to Goofy again to receive the Scrapbook. Place the Scrapbook somewhere in the village.</li>
+                                <li>Take one final photo with the gathered villagers.</li>
+                                <li>Speak to Goofy a final time.</li>
+                                <li>QUEST COMPLETE!</li>
+                            </ol>
+                            <hr>
                     </ul>
                 </div>
                 <div class="friendship_reward_section" id="goofy_rewards">
@@ -154,6 +191,41 @@
                 </div>
             </div>
         </div>
+        <div id="scrooge_section" class="single_char_section">
+            <div id="nameplate">
+                <h2>Scrooge McDuck</h2>
+                <img src="./images/scrooge_icon.png" />
+            </div>
+            <div class="info_section">
+                <div class="quests_section" id="scrooge_quests">
+                    <h2>Quests</h2>
+                    <ul class="questlist">
+                        <li class="questname">Making Cents of Things</li>
+                        <li class="questname">Scrooge McDuck's Grand Re-opening</li>
+                        <li class="questname">Dreamlight Valley Economy 101</li>
+                        <li class="questname">Customers Know Best</li>
+                        <li class="questname">A Forgotten Combination</li>
+                        <li class="questname">Rebuild the Valley: Peaceful Meadow</li>
+                        <li class="questname">Rebuild the Valley: Dazzle Beach</li>
+                        <li class="questname">What's Bad for the Business</li>
+                    </ul>
+                </div>
+                <div class="friendship_reward_section" id="scrooge_rewards">
+                    <h2>Friendship Rewards</h2>
+                    <ol>
+                        <li>Scrooge's Shop</li>
+                        <li>Record Player Decoration</li>
+                        <li>Outfit Overlay</li>
+                        <li>500 Star Coins</li>
+                        <li>Scrooge Wardrobe Decoration</li>
+                        <li>Bathing in Coin Outfit Overlay</li>
+                        <li>1000 Star Coins</li>
+                        <li>Scrooge McDuck's Top Hat</li>
+                        <li>Poster</li>
+                        <li>Scrooge McDuck's Safe Decoration</li>
+                    </ol>
+                </div>
+            </div>
     </div>
 </body>
 </html>
