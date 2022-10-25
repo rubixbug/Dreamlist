@@ -1,0 +1,30 @@
+body {
+    background-image: url(./images/blue_background.jpg);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+#main_section_links {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.icon {
+    height: 100px;
+    border: 5px solid white;
+    border-radius: 25%;
+    padding: 15px;
+}
+
+#main_section_links a {
+    font-family: "Inter", sans-serif;
+    color: white;
+    text-align: center;
+}

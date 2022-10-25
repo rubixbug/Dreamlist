@@ -1,0 +1,81 @@
+body {
+    background-color: #2CA5DD;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #E7DFC6;
+    font-size: 50px;
+}
+
+#character_section_links {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.char_icon {
+    height: 100px;
+    width: 95px;
+    border-radius: 25px;
+}
+
+.name_link {
+    text-align: center;
+}
+
+h3 {
+    font-family: "Inter", sans-serif;
+    color: #E7DFC6;
+}
+
+#nameplate {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #E7DFC6;
+}
+
+.quests_section h2 {
+    font-family: "Inter", sans-serif;
+    color: #E7DFC6;
+    text-align: center;
+}
+
+.questlist {
+    color: #E7DFC6;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+
+.friendship_reward_section {
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    color: #E7DFC6;
+}
+
+
+.questlist ol li {
+    color: #3A3335;
+}
+
+.questname {
+    text-decoration: underline;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.info_section {
+    display:flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+#nameplate img {
+    border-radius:50%;
+}
+
+hr {
+    border: 1px solid grey;
+    margin-top: 20px;
+}
