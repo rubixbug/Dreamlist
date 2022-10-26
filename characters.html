@@ -21,8 +21,10 @@
             </a>
         </div>
         <div class="name_link" id="scrooge_link">
-            <img class="char_icon" src="./images/scrooge_icon.png" />
-            <h3 class="char_name">Scrooge McDuck</h3>
+            <a href="#scrooge_section">
+                <img class="char_icon" src="./images/scrooge_icon.png" />
+                <h3 class="char_name">Scrooge McDuck</h3>
+            </a>
         </div>
     </div>
     <div id="character_section">
@@ -36,7 +38,7 @@
                     <h2>Quests</h2>
                     <ul class="questlist">
                         
-                            <li class="questname">Fishing Expedition<span id="dots">:</span></li>
+                            <li class="questname">Fishing Expedition<span id="dots_one">:</span></li>
                             <span id="goofy_quest_one">
                                 <ol>
                                     <li>Find Goofy's fishing rod by the pond near his house.</li>
@@ -50,11 +52,11 @@
                                 </ol>
                             </span>
                             <div class="button_space">
-                            <button onclick="revealGoofyOne()" id="myBtn_one" class="button">Reveal Steps</button>
+                            <button onclick="revealGoofyOne()" id="myBtn_one" class="button">+</button>
                             </div>   
                         
                         <hr>
-                        <li class="questname">A Warm Welcome<span id="dots">:</span></li>
+                        <li class="questname">A Warm Welcome<span id="dots_two">:</span></li>
                         <span id="goofy_quest_two">
                             <ol>
                                 <li>Speak to Goofy.</li>
@@ -65,10 +67,10 @@
                             </ol>
                             </span>
                             <div class="button_space">
-                            <button onclick="revealGoofyTwo()" id="myBtn_two" class="button">Reveal Steps</button>
+                            <button onclick="revealGoofyTwo()" id="myBtn_two" class="button">+</button>
                             </div>
                             <hr>
-                        <li class="questname">Photographic Memory<span id="dots">:</span></li>
+                        <li class="questname">Photographic Memory<span id="dots_three">:</span></li>
                         <span id="goofy_quest_three">
                             <ol>
                                 <li>Speak to Goofy, he'll ask you to take photos of things around the village.</li>
@@ -95,10 +97,10 @@
                             </ol>
                         </span>
                         <div class="button_space">
-                            <button onclick="revealGoofyThree()" id="myBtn_three" class="button">Reveal Steps</button>
+                            <button onclick="revealGoofyThree()" id="myBtn_three" class="button">+</button>
                             </div>
                             <hr>
-                        <li class="questname">The Mysterious Wreck<span id="dots">:</span></li>
+                        <li class="questname">The Mysterious Wreck<span id="dots_four">:</span></li>
                         <span id="goofy_quest_four">    
                         <ol>
                                 <li>Go to Dazzle Beach. Find the island across the water from Goofy's stall. On the far side of that island is a paddle in the sand. Pick it up.</li>
@@ -117,10 +119,10 @@
                             </ol>
                         </span>
                         <div class="button_space">
-                            <button onclick="revealGoofyFour()" id="myBtn_four" class="button">Reveal Steps</button>
+                            <button onclick="revealGoofyFour()" id="myBtn_four" class="button">+</button>
                             </div>
                             <hr>
-                        <li class="questname">Dinner With a Friend<span id="dots">:</span></li>
+                        <li class="questname">Dinner With a Friend<span id="dots_five">:</span></li>
                         <span id="goofy_quest_five">
                             <ol>
                                 <li>Speak to Goofy, he'll ask for help preparing dinner for Mickey coming over.</li>
@@ -137,10 +139,11 @@
                             </ol>
                         </span>
                         <div class="button_space">
-                            <button onclick="revealGoofyFive()" id="myBtn_five" class="button">Reveal Steps</button>
+                            <button onclick="revealGoofyFive()" id="myBtn_five" class="button">+</button>
                             </div>
                             <hr>
-                        <li class="questname">Photo Fervor<span id="dots">:</span></li>
+                        <li class="questname">Photo Fervor<span id="dots_six">:</span></li>
+                            <span id="goofy_quest_six">
                             <ol>
                                 <li>Speak to Goofy, he'll ask you to take photos of the following things:</li>
                                     <ul>
@@ -161,8 +164,13 @@
                                 <li>Equip a silly hat and take a selfie with Goofy.</li>
                                 <li>QUEST COMPLETE!</li>         
                             </ol>
+                            </span>
+                            <div class="button_space">
+                                <button onclick="revealGoofySix()" id="myBtn_six" class="button">+</button>
+                                </div>
                             <hr>
-                        <li class="questname">Scrapbook Blitz<span id="dots">:</span></li>
+                        <li class="questname">Scrapbook Blitz<span id="dots_seven">:</span></li>
+                        <span id="goofy_quest_seven">
                             <ol>
                                 <li>At Frienship Level 10, speak to Goofy who will ask for pictures of the villagers.</li>
                                 <li>Take a photo of Mickey, and then Donald, and then 4 other villagers that you'd like.</li>
@@ -171,23 +179,64 @@
                                 <li>Speak to Goofy a final time.</li>
                                 <li>QUEST COMPLETE!</li>
                             </ol>
+                            </span>
+                            <div class="button_space">
+                                <button onclick="revealGoofySeven()" id="myBtn_seven" class="button">+</button>
+                                </div>
                             <hr>
                     </ul>
                 </div>
                 <div class="friendship_reward_section" id="goofy_rewards">
-                    <h2>Friendship Rewards</h2>
-                    <ol>
-                        <li>Fishing Rod</li>
-                        <li>Pair of Sunglasses</li>
-                        <li>Outfit Overlay</li>
-                        <li>500 Star Coins</li>
-                        <li>Fireplace Decoration</li>
-                        <li>Goofy Outfit Overlay</li>
-                        <li>1000 Star Coins</li>
-                        <li>Cowprint Dresser Decoration</li>
-                        <li>Poster</li>
-                        <li>Goofy's Beanie</li>
-                    </ol>
+                    <h2 class="reward_title">Friendship Rewards</h2>
+                    <table id="reward_table">
+                        <tr>
+                            <th>Level</th>
+                            <th>Reward</th>
+                        </tr>
+                        <tr>
+                            <td class="level">1</td>
+                            <td  class="reward"><figure><img class="reward_icon" src="./images/fishing_rod.png"/>
+                                <figcaption>Fishing Rod</figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="level">2</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_two.jpg"><figcaption>Pair of Sunglasses</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">3</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_three.jpg"/><figcaption>Outfit Overlay</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">4</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_four.jpg"/><figcaption>500 Star Coins</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">5</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_five.jpg"/><figcaption>Fireplace Decoration</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">6</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_six.jpg"/><figcaption>Goofy Outfit Overlay</figcaption></figure></ficgure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">7</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_seven.jpg"/><figcaption>1000 Star Coins</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">8</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_eight.jpg"/><figcaption>Cowprint Dresser Decoration</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">9</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_nine.jpg"/><figcaption>Poster</figcaption></figure></td>
+                        </tr>
+                        <tr>
+                            <td class="level">10</td>
+                            <td class="reward"><figure><img class="reward_icon" src="./images/goofy_reward_ten.jpg"/><figcaption>Goofy's Beanie</figcaption></figure></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>

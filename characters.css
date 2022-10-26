@@ -1,11 +1,11 @@
 body {
-    background-color: #2CA5DD;
+    background-color: #52307c;
 }
 
 h1 {
     font-family: 'Inter', sans-serif;
     text-align: center;
-    color: #E7DFC6;
+    color: #bfedef;
     font-size: 50px;
 }
 
@@ -27,23 +27,23 @@ h1 {
 
 h3 {
     font-family: "Inter", sans-serif;
-    color: #E7DFC6;
+    color: #bfedef;
 }
 
 #nameplate {
     text-align: center;
     font-family: "Inter", sans-serif;
-    color: #E7DFC6;
+    color: #bfedef;
 }
 
 .quests_section h2 {
     font-family: "Inter", sans-serif;
-    color: #E7DFC6;
-    text-align: center;
+    color: #bfedef;
+    text-align:center;
 }
 
 .questlist {
-    color: #E7DFC6;
+    color: #bfedef;
     list-style: none;
     font-family: "Inter", sans-serif;
 }
@@ -51,7 +51,8 @@ h3 {
 .friendship_reward_section {
     font-family: "Inter", sans-serif;
     line-height: 30px;
-    color: #E7DFC6;
+    color: #bfedef;
+   
 }
 
 .questlist ol {
@@ -59,21 +60,26 @@ h3 {
 }
 
 .questlist ol li {
-    color: #3A3335;
+    color: #bca0dc;
     margin: 10px;
 }
 
 .questname {
-    text-decoration: underline;
-    font-size: 25px;
+    font-size: 20px;
     padding-bottom: 10px;
     text-align: center;
 }
 
 .info_section {
     display:flex;
-    justify-content: space-around;
-    padding: 50px;
+    justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
+    background-color:#663a82;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 #nameplate img {
@@ -82,7 +88,7 @@ h3 {
 }
 
 hr {
-    border: 1px solid #000080;
+    border: 1px solid #3c1361;
     margin-top: 20px;
     width: 50%;
 }
@@ -106,13 +112,45 @@ hr {
 #goofy_quest_five {
     display:none;
 }
+
+#goofy_quest_six {
+    display:none;
+}
+
+#goofy_quest_seven {
+    display:none;
+}
 .button {
-    background-color: green;
-    border-radius : 25px;
+    background-color: #663a82;
     font-family: "Inter", sans-serif;
-    color: aliceblue;
+    color: #bfedef;
+    border-radius: 25px;
+
 }
 
 .button_space {
+    text-align: center;
+}
+.reward_icon {
+    height: 50px;
+
+}
+#reward_table td {
+    align-items:center;
+    border: 2px solid #3c1361;
+}
+
+#reward_table figure {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.level {
+    width: 75px;
+    text-align: center;
+}
+.reward_title {
     text-align: center;
 }
